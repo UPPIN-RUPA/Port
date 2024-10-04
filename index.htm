@@ -65,6 +65,67 @@
     </div>
   </div>
 </section>
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+      <h2>Projects</h2>
+
+      <div class="row">
+          <div class="col-md-6">
+              <div class="card">
+                  <h3 class="card-title">Memory Management and Buffer Pool Optimization System (2024)</h3>
+                  <ul class="card-text">
+                    <li>Designed and implemented a comprehensive page file management system, facilitating operations including creating, reading, writing, and deleting page files.</li>
+                    <li>Developed and integrated buffer pool management functions utilizing various page replacement strategies (FIFO, LRU, LFU, CLOCK), ensuring optimal thread safety and memory efficiency.</li>
+                    <li>Engineered functions for robust table and record management, encompassing initialization, creation, deletion, and schema handling, to support dynamic data operations.</li>
+                    <li>Conducted thorough testing, debugging, and memory optimization using Valgrind, significantly enhancing code quality, performance, and system reliability.</li>
+                 </ul>
+                  <p><strong>Technologies Used:</strong> C, C++, Linux, Valgrind</p>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="card">
+                  <h3 class="card-title">Diabetes Prediction Using Machine Learning (2023)</h3>
+                  <ul class="card-text">
+                    <li>Engineered a robust Diabetes prediction solution, leveraging the power of Machine Learning algorithms like Linear Regression, Random Forest, Decision Tree, and SVM and delivering a seamless user experience by building the front end with HTML, CSS, and JavaScript.</li>
+                    <li>Optimized model performance through feature selection and hyperparameter tuning, improving prediction accuracy and reducing computation time, making the system more efficient and reliable for real-time predictions.</li>
+                    <li>Achieved high accuracy by using the data set from Kaggle online and built a highly useful disease prediction system as my final year project.</li>
+                 </ul>
+                  <p><strong>Technologies Used:</strong> Python, HTML, CSS, JavaScript</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-md-6">
+              <div class="card">
+                  <h3 class="card-title">NGO Website (2022)</h3>
+                  <ul class="card-text">
+                    <li>Created a fully functional NGO website that facilitated online donations by integrating Razor Pay as the payment gateway, providing a streamlined donation process for users.</li>
+                    <li>Leveraged web technologies such as HTML, CSS, and JavaScript to build a responsive and interactive front end, ensuring a user-friendly interface that works smoothly across different devices.</li>
+                    <li>Ensured secure handling of transactions and user data by implementing best practices in web development, making the donation process both efficient and reliable.</li>
+                 </ul>
+                  <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="card">
+                  <h3 class="card-title">Library Information System (Group Project) (2022)</h3>
+                  <ul class="card-text">
+                    <li>Developed a full-stack web application using web tools such as HTML, CSS, JavaScript, PHP, and MySQL.</li>
+                    <li>This website provides a computerized version of the library management system which benefits both students and staff.</li>
+                    <li>Included a student login feature for checking book status and requesting books, and a teacher login feature for adding lecture notes and providing suggestions to the library.</li>
+                  </ul>
+                  <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Add more rows and cards as needed -->
+
+  </div>
+</section>
+
 <!-- Skills Section -->
 <section id="skills" class="py-5">
   <div class="container text-center">
@@ -89,7 +150,7 @@
         <div class="card-content">
           <h4 class="card-title">Web Technologies</h4>
           <ul>
-            <li>HTML5, CSS3, JavaScript</li>
+            <li>HTML5,CSS3, JavaScript</li>
             <li>Bootstrap</li>
             <li>React.js</li>
             <li>PHP</li>
@@ -127,6 +188,40 @@
   </div>
 </section>
 
+<!-- Contact Me Section -->
+<section id="contact">
+  <div class="container">
+      <div class="card">
+          <h2>Contact Me!</h2>
+          <p>Don't be shy! I love meeting new people.</p>
+          
+          <div class="social-icons">
+              <a href="https://www.linkedin.com/in/mattamohit/" target="_blank">
+                  <img src="linkedin.png" alt="LinkedIn" style="width:40px;">
+              </a>
+              <a href="https://twitter.com" target="_blank">
+                  <img src="twitter.png" alt="Twitter" style="width:40px;">
+              </a>
+              <a href="https://github.com" target="_blank">
+                  <img src="github.png" alt="GitHub" style="width:40px;">
+              </a>
+          </div>
+
+          <form action="mailto:mohitmatta2002@gmail.com" method="post" enctype="text/plain">
+              <div class="mb-3">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+  </div>
+</section>
 
 
     </main>

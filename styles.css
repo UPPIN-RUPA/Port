@@ -175,7 +175,6 @@ main {
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     min-height: 100vh; /* Make the section cover full viewport height */
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust background if needed */
 }
 
 #about .card {
@@ -202,8 +201,13 @@ main {
 }
 /* Skills Section */
 #skills {
-    color: #ffffff;
-    padding: 50px 10px;
+    padding: 50px 10%;; /* Adjust padding to position it vertically in the middle */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Make the section cover full viewport height */
+    color: #f8f8f8;
+   
 }
 
 .card-carousel {
@@ -220,7 +224,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     width: 200px;
-    height: 300px;
+    height: 350px;
     text-align: left;
     transform: scale(1);
     transition: transform 0.3s ease;
@@ -264,6 +268,134 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+#projects {
+    padding: 50px 10%;; /* Adjust padding to position it vertically in the middle */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Make the section cover full viewport height */
+    
+}
+
+#projects .container {
+    max-width: 1000px; /* Adjust width to your desired content size */
+    text-align: center; /* Center-align text */
+}
+
+#projects h2 {
+    margin-bottom: 40px; /* Add space below the title */
+    color: #fff; /* White title */
+}
+
+#projects .card {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the project cards */
+    color: #fff; /* White text for cards */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for card effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+#projects .card:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
+
+#projects ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+#projects ul li {
+    margin: 10px 0; /* Add space between list items */
+}
+
+#projects p {
+    color: #ddd; /* Softer white for the project descriptions */
+}
+
+/* Contact Section Styles */
+#contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact .card {
+    position: relative;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f9f4ea; /* Light beige background for the card */
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#contact .card::before,
+#contact .card::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border: 8px solid transparent;
+    border-image-slice: 1;
+    transition: 0.5s;
+}
+
+#contact .card::before {
+    top: 0;
+    left: 0;
+    border-image-source: linear-gradient(to left, #FFDD00, #1a73e8);
+}
+
+#contact .card::after {
+    bottom: 0;
+    right: 0;
+    border-image-source: linear-gradient(to right, #1a73e8, #FFDD00);
+}
+
+#contact .container{
+    background-color: transparent;
+}
+#contact h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+#contact p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#contact .social-icons a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+#contact .social-icons a:hover {
+    color: #1a73e8; /* Blue color on hover */
+}
+
+/* Style for buttons */
+#contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
 
 /* Styles for tablets and smaller devices */
 @media (max-width: 768px) {

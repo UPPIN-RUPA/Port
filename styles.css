@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-right: -6px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: url('backgroundImg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    background-color: rgba(29, 31, 33, 0.7); /* Slightly darker transparent background */
+    position: fixed; /* Keep header fixed at the top */
+    width: 100%; /* Ensure the header takes up the full width */
+    top: 0; /* Align to the top of the page */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    height: 80px;
+}
+
+.logo {
+    cursor: pointer;
+    /* margin-right: auto; */
+    color: #edf0f1;
+    font-size: 24px;
+    margin-left: -121px;
+}
+.nav-link {
+    display: flex; /* Allows icon and text to align in a row */
+    align-items: center; /* Vertically aligns icon and text */
+    justify-content: center; /* Horizontally centers icon and text */
+    gap: 8px; /* Creates space between the icon and text */
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 8px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav_links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin-right: -210px;
+    gap: 0px;
+}
+
+.nav_links li {
+    /* display: inline-block; */
+    margin-right: 7px;
+    position: relative;
+}
+
+.nav_item {
+    color: transparent; /* Initially hide text */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(68, 80, 88, 0.8);
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Hide the link name text initially */
+.nav-item span {
+    visibility: hidden;
+    color: transparent;
+    padding: 10px 15px; /* Add padding to make it button-like */
+    border-radius: 25px; /* Make rounded button */
+    border: 2px solid transparent; /* Initially no border */
+    background-color: rgba(68, 80, 88, 0.8); /* Initial button background */
+    transition: color 0.3s ease, visibility 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+    transform: translateX(-50%); /* Center the text */
+}
+
+/* Show the link icon initially */
+.nav-item img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* On hover: Hide the icon and show the text in a button */
+.nav-item:hover img {
+    opacity: 0; /* Hide the icon */
+}
+
+.nav-item:hover span {
+    visibility: visible; /* Show the text */
+    color: #ffffff; /* Set text color */
+    border: 2px solid #ffffff; /* White border on hover */
+    background-color: rgba(68, 80, 88, 0.9); /* Slightly darker background */
+    opacity: 1; /* Smooth fade-in effect */
+}
+
+/* Hover effect for the whole link container */
+.nav-item:hover {
+    transform: scale(1.1);
+}

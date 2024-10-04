@@ -25,6 +25,15 @@ header {
     height: 80px;
 }
 
+main {
+    margin-top: 80px; /* Adjust this based on your header height */
+}
+
+.container {
+    padding-top: 20px;
+}
+
+
 .logo {
     cursor: pointer;
     /* margin-right: auto; */
@@ -114,4 +123,189 @@ header {
 /* Hover effect for the whole link container */
 .nav-item:hover {
     transform: scale(1.1);
+}
+
+.intro-card {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .home-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .profile-pic {
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    max-width: 1200px;
+    background-color: rgba(42, 49, 54, 0.5);
+  }
+  
+  section#home {
+    padding: 166px 146px; /* Adding enough padding from the top */
+  }
+  
+  section {
+    padding-top: 100px; /* Adjust this value to avoid overlapping with header */
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+/* Similar styles to Home Section */
+#about {
+    padding: 50px 10%;; /* Adjust padding to position it vertically in the middle */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Make the section cover full viewport height */
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust background if needed */
+}
+
+#about .card {
+    background-color: rgba(0, 0, 0, 0.8); /* Make the background semi-transparent */
+    padding: 20px; /* Add padding inside the card for better spacing */
+    border-radius: 10px; /* Add rounded corners */
+    color: #ffffff; /* Make the text white */
+    margin: 20px 0; /* Add margin for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+}
+
+/* Optional: Consistent text style */
+#about h2 {
+    font-size: 2rem; /* Adjust heading size */
+    color: #ffffff; /* White heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+#about p {
+    line-height: 1.6; /* Improve readability with better line spacing */
+    font-size: 1.1rem; /* Slightly larger font size for clarity */
+    margin-bottom: 15px; /* Space between paragraphs */
+    color: #ffffff; /* White text */
+}
+/* Skills Section */
+#skills {
+    color: #ffffff;
+    padding: 50px 10px;
+}
+
+.card-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Gap between cards */
+    position: relative;
+}
+
+.skill-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    width: 200px;
+    height: 300px;
+    text-align: left;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.card-content h4 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.card-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-content ul li {
+    padding: 5px 0;
+    font-size: 1.1rem;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* Base styles (for larger screens) */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styles for tablets and smaller devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+
+    .nav_links ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Styles for phones and very small screens */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .intro-card p {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .nav_links ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
